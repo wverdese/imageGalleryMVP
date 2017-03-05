@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.wverdese.gallery.ui.utils.SquareCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="8dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:roundedCornerRadius="@dimen/cardview_default_radius"
+        android:clickable="false"
+        android:duplicateParentState="true" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/alpha_black"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        android:maxLines="1"
+        android:ellipsize="marquee" />
+
+</me.wverdese.gallery.ui.utils.SquareCardView>
